@@ -4,14 +4,14 @@ Data are included in the ts_data.RData file. This is an R environment with 9 dat
 
 In additional columns, the dataframes contain information about the daily survey sample represented by each row. These columns are:
 
-pct_bachelors -- Weighted percentage of respondents with a Bachelor's degree or higher
-pct_white -- Weighted percentage of respondents who are non-Hispanic White
-pct_male -- Weighted percentage of respondents whose gender ID is male
-pct_strong_partisan -- Weighted percentage of respondents who identify as "strong" partisans (a 1 or 7 on the seven-point PID scale)
-pct_high_interest -- Weighted percentage of respondents who say they follow news "most of the time"
-survey -- Whether day's responses come from Nationscape or America's Political Pulse study
-day_of_week -- Day of week (Sun to Sat) for that row's responses
-n_responses -- Number of responses contributing to that day's estimates
+* pct_bachelors -- Weighted percentage of respondents with a Bachelor's degree or higher
+* pct_white -- Weighted percentage of respondents who are non-Hispanic White
+* pct_male -- Weighted percentage of respondents whose gender ID is male
+* pct_strong_partisan -- Weighted percentage of respondents who identify as "strong" partisans (a 1 or 7 on the seven-point PID scale)
+* pct_high_interest -- Weighted percentage of respondents who say they follow news "most of the time"
+* survey -- Whether day's responses come from Nationscape or America's Political Pulse study
+* day_of_week -- Day of week (Sun to Sat) for that row's responses
+* n_responses -- Number of responses contributing to that day's estimates
 
 Additional notes for analysis:
 
