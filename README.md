@@ -1,4 +1,4 @@
-Over the past few years, frequent survey questions about partisan affect in the US have made it possible to study affective polarization using time series data. This compiles responses to two large projects, the Nationscape and America's Political Pulse surveys, to create a combined daily time series of T ~ 1000 for US polarization from 2019 and 2023.
+Over the past few years, frequent survey questions about partisan affect in the US have made it possible to study affective polarization using time series data. This compiles responses to two large projects, the Nationscape and America's Political Pulse surveys, to create a combined daily time series of T ~ 1000 for US polarization from 2019 and 2023. (Importantly, the data do not include Feb 2021 to Aug 2022, when neither study was active.)
 
 Data are included in the ts_data.RData file. This is an R environment with 9 dataframes, each containing 3 separate time series. The first word ("public", "democrats", and "republicans") indicates the group for which polarization is measured, and the second word ("ns", "pulse", or "all") indicates which survey the time series was drawn from, or if it combines them both. Then, each dataframe has a time series for polarization and its component parts, inparty affect and outparty affect.
 
@@ -16,8 +16,8 @@ In additional columns, the dataframes contain information about the daily survey
 Additional notes for analysis:
 
 * The source data from the Nationscape and America's Political Pulse studies are not housed here. You can download them from the links below:
-    https://www.voterstudygroup.org/data/nationscape
-    https://polarizationresearchlab.org/americas-political-pulse/ (see "Download" on the left sidebar)
+      https://www.voterstudygroup.org/data/nationscape
+      https://polarizationresearchlab.org/americas-political-pulse/ (see "Download" on the left sidebar)
 
 * A small fraction of the estimates from the APP are based on fewer than 10 survey responses. For analysis, I would advise removing these observations or -- if the dates need to be kept in the TS -- using linear interpolation to create those dates' estimates.
   
