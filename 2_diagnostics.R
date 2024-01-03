@@ -60,7 +60,7 @@ adf_results_df
 # B. Autocorrelation in time series
 
 # Define a set of lags for the Ljung-Box test
-lags <- c(1, 5, 10, 15, 20)
+lags <- 1:20
 
 # Initialize a dataframe to store results
 box_test_results_df <- data.frame(
@@ -102,6 +102,7 @@ for (df in dataframes) {
   }
 }
 
-# Most do not show autocorrelation at p < .01, but some do
-box_test_results_df
+# Some group affect TSs show autocorrelation, more limited for polarization TSs
+table(paste(box_test_results_df$dataframe, box_test_results_df$column),
+      box_test_results_df$is_significant)
 
