@@ -18,5 +18,7 @@ Additional notes for analysis:
 * The source data from the Nationscape and America's Political Pulse studies are not housed here. You can download them from the links below:
     https://www.voterstudygroup.org/data/nationscape
     https://polarizationresearchlab.org/americas-political-pulse/ (see "Download" on the left sidebar)
+
+* A small fraction of the estimates from the APP are based on fewer than 10 survey responses. For analysis, I would advise removing these observations or -- if the dates need to be kept in the TS -- using linear interpolation to create those dates' estimates.
   
 * In these data, polarization and affect are presented on a 0 to 100 scale. This is the standard set by the ANES feeling thermometers, which the America's Political Pulse survey uses. To scale the Nationscape study, I assigned values of 0/33/66/99 to the responses "very unfavorable," "somewhat unfavorable," "somewhat favorable," and "very favorable" (see my dissertation for validation of this instrument). An artifact of this is that NS scores are slightly lower than APP, and analyses should account for this using a control variable indicating the survey from which estimates were sourced.
